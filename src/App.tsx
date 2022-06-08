@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { Dashboard } from "./components/Dashboard";
+import { Header } from "./components/Header/index";
+import { GlobalStyle } from "./styles/global";
+import Modal from 'react-modal'
+import { useState } from 'react';
+import {NewTransactionModal} from './components/NewTransactionModal/index'
+
+Modal.setAppElement('#root');
+
+
+//Exportando dessa maneira me 
+//obriga a colocar o mesmo nome da funçao
+export function App() {
+  const [isNewTableTransactionModal, setIsNewTableTransactionModal] = useState(false);
+
+    function handleOpenNewTransactionModal(){
+        setIsNewTableTransactionModal(true);
+    }
+    function handleCloseNewTransactionModal(){
+        setIsNewTableTransactionModal(false);
+    }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header onOpenNewTransactionModal={handleOpenNewTransactionModal}/>
+    <Dashboard/>
+    <NewTransactionModal
+    isOpen={isNewTableTransactionModal}
+    onRequestClose={handleCloseNewTransactionModal}
+    />
+    <GlobalStyle />
+    </>
   );
 }
-
-export default App;
