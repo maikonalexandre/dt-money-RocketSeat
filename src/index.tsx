@@ -19,6 +19,14 @@ seeds(server){
         category:'Dev',
         amount:1000,
         createdAt: new Date('2021-02-12 09:00:08'),
+      },
+      {
+        id:2,
+        title:'Casa',
+        type: 'deposit',
+        category:'Dev',
+        amount:1200,
+        createdAt: new Date('2021-02-12 09:00:08'),
       }
     ]
   })
