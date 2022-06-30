@@ -16,3 +16,9 @@ Este é um projeto que foi desenvolvido no curso ignite da RocketSeat. Se consis
 * Criar uma api fake,
 * Criar um banco de dados fake,
 * Consumir dados da Api
+
+
+
+## Entre em contato comigo.
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maikon-alexandre)
+![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
