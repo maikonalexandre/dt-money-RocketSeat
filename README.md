@@ -9,7 +9,7 @@ Este é um projeto que foi desenvolvido no curso ignite da RocketSeat. Se consis
 ## ⚙️ Instalação
 ```
 # Abra um terminal e copie este repositório com o comando
-$ git clone https://github.com/maikonalexandre/pokedex
+$ git clone https://github.com/maikonalexandre/ignite-dt-money
 ```
 ```
 # Instale as dependências
